@@ -1,0 +1,1 @@
+# CareSync Domain Applications Directory

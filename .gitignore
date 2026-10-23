@@ -1,0 +1,64 @@
+# ==============================================================================
+# CareSync — Git Ignore Configuration
+# Excludes virtual environments, environment secrets, dependencies, and caches
+# ==============================================================================
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets (CRITICAL: Never commit to version control)
+.env
+.env.local
+.env.*.local
+*.env
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Django generated files
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+
+# Frontend dependencies and build artifacts
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+frontend/dist-ssr/
+.eslintcache
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
